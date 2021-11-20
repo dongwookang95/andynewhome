@@ -5,6 +5,8 @@ import blogImage from './asset/blog.png';
 import contactImage from './asset/contact.png';
 import projectImage from './asset/project.png';
 import classes from './home.module.css';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import { Tooltip } from 'react-bootstrap';
 
 
 const Home = () => {
@@ -14,50 +16,66 @@ const Home = () => {
 
                 <li className={classes.MainMenuItems}>
                     <NavLink to='/about'>
-                    <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem'}}>
-                       <img src={aboutImage} alt='about' className='w-100' />
-                            <a href='#!'>
-                                <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
-                            </a>
-                        </MDBRipple>
+                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Click if you want to know more about me!</Tooltip>}>
+                            <span className="d-inline-block">
+                                <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
+                                    <img src={aboutImage} alt='about' className='w-100' />
+                                    <div className={classes.itemDescription}>ABOUT</div>
+                                    <a href='#!'>
+                                        <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
+                                    </a>
+                                </MDBRipple>
+                            </span>
+                        </OverlayTrigger>
                     </NavLink>
-
                 </li>
 
                 <li className={classes.blankSection} />
                 <li className={classes.MainMenuItems}>
                     <NavLink to='/blog'>
-                    <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem'}}>
-                        <img src={blogImage} alt='blog' />
-                        <a href='#!'>
-                                <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
-                            </a>
-                        </MDBRipple>
+                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Click if you want to check out my articles!</Tooltip>}>
+                            <span className="d-inline-block">
+                                <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
+                                    <img src={blogImage} alt='blog' />
+                                    <div className={classes.itemDescription}>BLOG</div>
+                                    <a href='#!'>
+                                        <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
+                                    </a>
+                                </MDBRipple>
+                            </span>
+                        </OverlayTrigger>
                     </NavLink>
                 </li>
                 <li className={classes.blankSection} />
                 <li className={classes.MainMenuItems}>
                     <NavLink to='/contact'>
-                    <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem'}}>
-
-                        <img src={contactImage} alt='contact' />
-                        <a href='#!'>
-
-                                <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
-                            </a>
-                        </MDBRipple>
+                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Click if you want to contact me!</Tooltip>}>
+                            <span className="d-inline-block">
+                                <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
+                                    <img src={contactImage} alt='contact' />
+                                    <div className={classes.itemDescription}>CONTACT</div>
+                                    <a href='#!'>
+                                        <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
+                                    </a>
+                                </MDBRipple>
+                            </span>
+                        </OverlayTrigger>
                     </NavLink>
                 </li>
                 <li className={classes.blankSection} />
                 <li className={classes.MainMenuItems}>
                     <NavLink to='/project'>
-                    <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem'}}>
-
-                        <img src={projectImage} alt='project' />
-                        <a href='#!'>
-                                <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
-                            </a>
-                        </MDBRipple>
+                        <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">Click if you want to know more about my project!</Tooltip>}>
+                            <span className="d-inline-block">
+                                <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
+                                    <img src={projectImage} alt='project' />
+                                    <div className={classes.itemDescription}>PROJECT</div>
+                                    <a href='#!'>
+                                        <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
+                                    </a>
+                                </MDBRipple>
+                            </span>
+                        </OverlayTrigger>
                     </NavLink>
                 </li>
             </ul>

@@ -4,8 +4,7 @@ import About from "./pages/about/about";
 import Blog from "./pages/blog/blog";
 import Project from "./pages/project/project";
 import Contact from "./pages/contact/contact";
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 
