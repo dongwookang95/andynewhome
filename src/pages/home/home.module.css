@@ -20,6 +20,12 @@
     padding: 10px;
 }
 
+.itemDescription {
+    font-family: 'Cabin', 'sans-serif';
+    font-style: bold;
+    color: black;
+}
+
 .blankSection {
     display: inline;
     padding: 6%;

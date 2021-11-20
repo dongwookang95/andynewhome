@@ -6,7 +6,14 @@ import contactImage from './asset/contact.png';
 import projectImage from './asset/project.png';
 import classes from './home.module.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import WebFont from 'webfontloader';
 import { Tooltip } from 'react-bootstrap';
+
+WebFont.load({
+    google:{
+        families: ['Cabin', 'sans-serif;']
+    }
+})
 
 
 const Home = () => {
@@ -20,7 +27,7 @@ const Home = () => {
                             <span className="d-inline-block">
                                 <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
                                     <img src={aboutImage} alt='about' className='w-100' />
-                                    <div className={classes.itemDescription}>ABOUT</div>
+                                    <div className={classes.itemDescription}> <b> ABOUT </b></div>
                                     <a href='#!'>
                                         <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
                                     </a>
@@ -37,7 +44,7 @@ const Home = () => {
                             <span className="d-inline-block">
                                 <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
                                     <img src={blogImage} alt='blog' />
-                                    <div className={classes.itemDescription}>BLOG</div>
+                                    <div className={classes.itemDescription}> <b> BLOG </b></div>
                                     <a href='#!'>
                                         <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
                                     </a>
@@ -53,7 +60,7 @@ const Home = () => {
                             <span className="d-inline-block">
                                 <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
                                     <img src={contactImage} alt='contact' />
-                                    <div className={classes.itemDescription}>CONTACT</div>
+                                    <div className={classes.itemDescription}> <b> CONTACT </b></div>
                                     <a href='#!'>
                                         <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
                                     </a>
@@ -69,7 +76,7 @@ const Home = () => {
                             <span className="d-inline-block">
                                 <MDBRipple className='bg-image hover-zoom' style={{ maxWidth: '22rem' }}>
                                     <img src={projectImage} alt='project' />
-                                    <div className={classes.itemDescription}>PROJECT</div>
+                                    <div className={classes.itemDescription}> <b> PROJECT </b></div>
                                     <a href='#!'>
                                         <div className='mask' style={{ backgroundColor: 'rgba(251, 251, 251, 0.2)' }}></div>
                                     </a>
