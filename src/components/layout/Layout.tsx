@@ -1,15 +1,13 @@
-// import { Fragment } from 'react';
+import { Fragment } from 'react';
 
 
-// import classes from './Layout.module.css';
-import MenuContainer from '../menu/MenuContainer';
 
-const Layout = () => {
-  return (
-    <div>
-      <MenuContainer />
-      </div>
-  );
+const Layout = (props : any) => {
+    return (
+        <Fragment>
+            <main>{props.children}</main>
+        </Fragment>
+    );
 };
 
 export default Layout;
