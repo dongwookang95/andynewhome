@@ -15,8 +15,8 @@ const Home = () => {
             <div className="w-full md:h-96 flex justify-center text-white flex-col md:flex-row ">
                 <div className="flex justify-center items-center w-full px-8 py-8">
                 <div className="grid grid-cols-2 gap-4 h-32">
-                    <div className="text-6xl font-extrabold text-white col-span-2">Decentrailzation</div>
-                    <div className="text-4xl font-extrabold text-white">Decentrailzed Finance</div>
+                    <div className="text-6xl font-extrabold text-white col-span-2">Decentralization</div>
+                    <div className="text-4xl font-extrabold text-white">Decentralized Finance</div>
                     <div className="text-4xl font-extrabold text-white">Web 3.0</div>
                     <div className="text-2xl font-extrabold text-white">Blockchain Developer</div>
                 </div>

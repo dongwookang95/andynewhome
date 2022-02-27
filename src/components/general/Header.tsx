@@ -9,7 +9,7 @@ const Header = () => {
         <img src={mainLogo} className="w-32 cursor-pointer " alt="logoImage"/>
       </div>
       <div className="w-1/3 h-12">
-        dasd
+        
       </div>
       <div className="w-1/3 h-12">
       <MenuBar/>
